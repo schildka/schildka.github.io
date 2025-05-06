@@ -199,6 +199,12 @@ body {
       height: auto;
     }
 
+    .project-gallery-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 34px 16px;
+    }
+
 
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
