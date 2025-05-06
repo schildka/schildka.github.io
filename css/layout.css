@@ -177,6 +177,58 @@ body {
     }
 
 
+/* Card Container */
+.project-init {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px; /* You can adjust the width */
+  margin: 20px auto;
+}
+
+/* Card Header */
+.card-header {
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Card Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Card Item (for each detail) */
+.card-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-item strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Link Style */
+.card-item a {
+  text-decoration: none;
+  color: #0077cc;
+  transition: color 0.3s;
+}
+
+.card-item a:hover {
+  color: #005fa3;
+}
+
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
   #main-content {
