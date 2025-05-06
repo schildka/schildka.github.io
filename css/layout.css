@@ -146,6 +146,29 @@ body {
   gap: 34px;
 }
 
+.project-entry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.project-description {
+  flex: 1 1 300px;
+}
+
+.project-image {
+  flex: 1 1 300px;
+  text-align: right;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
     /* Project Gallery */
 
     #project-gallery {
