@@ -67,6 +67,7 @@
       <p>
         This poster showcases the core features of the Managine 3D engine, including real-time lighting,
         shadow mapping, and modular ECS architecture. The engine is built using C++ and OpenGL.
+	<br>
 	Managine including an asset management, rendering,
 	animation, physics and sound system. Special emphasis lies on
 	several rendering aspects, in-game resource management and
@@ -75,6 +76,36 @@
 	and usability. On a CPU with 3.30GHz both games run with 60
 	frames per seconds. For each of Managines features, around 1
 	to 8 lines of codes are necessary, for integration.
+	<br>
+	Two different games were created with Managine. A building game, where the player has
+	to manage resources and build objects to handle them and a
+	puzzle game, in which a riddle has to be solved in time. Optical
+	differences are the character models which uses different
+	animations as well as the skyboxes. The building game makes
+	use of a terrain, whereas the puzzle game only utilize 3D
+	boxes to build the game world. Furthermore, the graphical user
+	interface differs too. Other distinctions only concern the games
+	rules. As a result both games are only distinguishable by their
+	behavior and environment. Both integrates Managines engine
+	and thus the engines rendering, physics, sound, animation and
+	asset management system.
+	<br>
+	Both games were tested and the frames per seconds were
+	evaluated. Measured was on an Intel(R) Core(TM) i5-6600
+	CPU with 3.30GHz. On a debug build both games run with
+	constants 30 fps. On the other hand, both release builds
+	displayed 60 fps while playing.
+	<br>
+	The engines usability was measured in lines of code. For
+	example to switch the camera to a free flight camera from the
+	third person camera perspective and back, only requires one
+	line of code. Both camera perspectives are already defined in
+	Managine and only one enum triggers the change. Depending
+	on what is needed, water effects can be implemented in the
+	game typing four to eight lines of code. For every new light
+	creation only one line of code is necessary. At last, the minimal
+	amount of lines of code needed to initialize an object and place
+	it into the world with its properties and physics values, is three.
       </p>
     </div>
     <div class="project-entry-image">
