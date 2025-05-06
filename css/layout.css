@@ -205,6 +205,40 @@ body {
       gap: 34px 16px;
     }
 
+    .masonry {
+      column-count: 2;
+      column-gap: 24px;
+      margin-top: 48px;
+    }
+    
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 24px;
+      display: inline-block;
+      width: 100%;
+    }
+    
+    .masonry-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+    
+    .image-caption {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    /* Responsive behavior */
+    @media (max-width: 1000px) {
+      .masonry {
+        column-count: 1;
+      }
+    }
+
 
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
