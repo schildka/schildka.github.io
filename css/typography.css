@@ -47,3 +47,33 @@ body {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Typography stays the same unless you want color overrides */
+.dark-mode body,
+.dark-mode .nav-title,
+.dark-mode .button-text,
+.dark-mode .image-caption,
+.dark-mode .main-title,
+.dark-mode .subheader-text,
+.dark-mode .body-text,
+.dark-mode .project-card-text,
+.dark-mode .project-title {
+  color: white;
+}
+
+/* Smooth transition for text color */
+body,
+.nav-title,
+.button-text,
+.image-caption,
+.main-title,
+.subheader-text,
+.body-text,
+.project-card-text,
+.project-title {
+  transition: color 0.3s ease;
+}

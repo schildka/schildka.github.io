@@ -24,7 +24,11 @@
 		<script defer src="../js/script.js"></script>
 	</head>
 	<body>
-		
+
+<button id="dark-mode-toggle" class="dark-mode-toggle">
+  <span class="button-text">Toggle Dark Mode</span>
+</button>
+
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="../index.html">
@@ -34,32 +38,6 @@
           (this should be the same across all pages)
          -->
         <span class="nav-title">Portfolio</span>
-
-	 <!-- Project Details Card Section -->
-	<div class="project-init">
-	  <div class="card-header">
-	    <h3 class="card-title">Project Details</h3>
-	  </div>
-	  
-	  <div class="card-body">
-	    <div class="card-item">
-	      <strong>Engine Used:</strong>
-	      <span>Custom 3D Engine</span>
-	    </div>
-	    <div class="card-item">
-	      <strong>Programming Languages:</strong>
-	      <span>C++, OpenGL</span>
-	    </div>
-	    <div class="card-item">
-	      <strong>Tools Used:</strong>
-	      <span>Visual Studio, Git, CMake</span>
-	    </div>
-	    <div class="card-item">
-	      <strong>Project Link:</strong>
-	      <span><a href="https://github.com/your-project">GitHub Repository</a></span>
-	    </div>
-	  </div>
-	</div>
 	      
         <!-- 
           TODO - Change the email after 'mailto:' to your email address for contact 
@@ -72,6 +50,32 @@
       </a>
     </div>
 		
+<aside class="project-sidebar">
+    <div class="project-init">
+      <div class="card-header">
+        <h3 class="card-title">Project Details</h3>
+      </div>
+      <div class="card-body">
+        <div class="card-item">
+          <strong>Engine Used:</strong>
+          <span>Custom 3D Engine</span>
+        </div>
+        <div class="card-item">
+          <strong>Programming Languages:</strong>
+          <span>C++, OpenGL</span>
+        </div>
+        <div class="card-item">
+          <strong>Tools Used:</strong>
+          <span>Visual Studio, Git, CMake</span>
+        </div>
+        <div class="card-item">
+          <strong>Project Link:</strong>
+          <span><a href="https://github.com/your-project">GitHub Repository</a></span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
 
@@ -179,6 +183,12 @@ update function which gets carried out by the engine.</div>
         <image src="../assets/icons/linkedIn.svg" class="footer-icon"/>
       </a>
     </div>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
 
 	</body>
 </html>

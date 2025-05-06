@@ -275,3 +275,113 @@ body {
     max-width: 100%;
   }
 }
+
+/* ==== PROJECT PAGE LAYOUT ==== */
+.project-page-container {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.project-main-content {
+  flex: 1;
+}
+
+.project-sidebar {
+  width: 350px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 150px;
+}
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .project-init {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #80cbc4;
+}
+
+body.dark-mode a:hover {
+  color: #4db6ac;
+}
+
+body.dark-mode .card-item strong,
+body.dark-mode .card-title {
+  color: #fafafa;
+}
+
+/* Optional: Button for toggle */
+.dark-mode-toggle {
+  position: fixed;
+  top: 128px;
+  right: 16px;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* DARK MODE STYLES */
+
+
+body.dark-mode .card-title {
+  color: #f0f0f0;
+}
+
+body.dark-mode .card-item {
+  color: #cccccc;
+}
+
+body.dark-mode .card-item strong {
+  color: #ffffff;
+}
+
+body.dark-mode .card-item a {
+  color: #80d0ff;
+}
+
+body.dark-mode .card-item a:hover {
+  color: #4eb8ff;
+}
+
+body.dark-mode .project-init {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+.footer-icon {
+  color: black;
+}
+
+.dark-mode .footer-icon {
+  color: white;
+}
+
+.right-arrow-icon {
+  color: black; /* default for light mode */
+}
+
+/* Make it white in dark mode */
+.dark-mode .right-arrow-icon {
+  color: white;
+}
+
+.dark-mode .right-arrow-icon {
+  filter: invert(1);
+}
+
+.dark-mode img.footer-icon {
+  filter: invert(1);
+}

@@ -104,3 +104,40 @@ a.no-underline:hover {
     padding: 20px 20px;
   }
 }
+
+/* Dark Mode Overrides */
+.dark-mode .navbar {
+  background-color: #121212;
+}
+
+.dark-mode .nav-title-link,
+.dark-mode a.button,
+.dark-mode a.no-underline {
+  color: white;
+}
+
+.dark-mode a.button {
+  border-color: white;
+}
+
+.dark-mode a.icon-link:hover {
+  stroke: white;
+}
+
+.dark-mode a.no-underline:hover,
+.dark-mode .nav-title-link:hover {
+  text-decoration-color: white;
+}
+
+/* For the footer */
+.dark-mode #footer {
+  background-color: #121212;
+}
+
+/* Optional: Add transition for smooth color change */
+body,
+.navbar,
+a.button,
+#footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
