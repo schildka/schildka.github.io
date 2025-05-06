@@ -323,7 +323,7 @@ body.dark-mode .card-title {
 /* Optional: Button for toggle */
 .dark-mode-toggle {
   position: fixed;
-  top: 128px;
+  top: 16px;
   right: 16px;
   background-color: #333;
   color: #fff;
@@ -335,6 +335,50 @@ body.dark-mode .card-title {
 
 /* DARK MODE STYLES */
 
+
+/* Dark Mode Toggle Button Styles */
+.dark-mode-toggle {
+  padding: 8px 16px;
+  border: 3px solid #141414;
+  border-radius: 50px;
+  color: black; /* Default color for light mode */
+  background-color: transparent;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect for dark mode toggle button */
+.dark-mode-toggle:hover {
+  background-color: #f4f4f4;
+  color: #333; /* Text color on hover */
+  border-color: #333;
+}
+
+/* Dark Mode Styles for the toggle button */
+body.dark-mode .dark-mode-toggle {
+  color: white; /* Text color in dark mode */
+  border-color: #e0e0e0; /* Border color in dark mode */
+}
+
+/* Hover effect for dark mode button in dark mode */
+body.dark-mode .dark-mode-toggle:hover {
+  background-color: #333;
+  color: white;
+  border-color: white;
+}
+
+/* Specific Button Text */
+.dark-mode-toggle .button-text {
+  font-weight: bold;
+}
+
+/* Dark Mode Styling for Footer Icons (if needed) */
+body.dark-mode .footer-icon {
+  color: white;
+}
 
 body.dark-mode .card-title {
   color: #f0f0f0;

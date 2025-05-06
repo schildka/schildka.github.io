@@ -25,72 +25,23 @@
 	</head>
 	<body>
 
-<button id="dark-mode-toggle" class="dark-mode-toggle">
-  <span class="button-text">Toggle Dark Mode</span>
-</button>
-
     <!-- NAVBAR -->
-    <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
-
-          (this should be the same across all pages)
-         -->
-        <span class="nav-title">Portfolio</span>
-	      
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-        <a class="button" href="mailto:schildknecht.manuela@gmail.com">
-          <span class="button-text">Contact Me</span>
-        </a>
-      </a>
-    </div>
+<div class="navbar">
+  <a class="nav-title-link" href="../index.html">
+    <span class="nav-title">Portfolio</span>
+  </a>
+  
+  <!-- Wrap these buttons inside a container -->
+  <div class="navbar-actions">
+    <!-- Dark mode toggle -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+      <span class="button-text">Toggle Dark Mode</span>
+    </button>
+  </div>
+</div>
 		
-<aside class="project-sidebar">
-    <div class="project-init">
-      <div class="card-header">
-        <h3 class="card-title">Project Details</h3>
-      </div>
-      <div class="card-body">
-        <div class="card-item">
-          <strong>Engine Used:</strong>
-          <span>Custom 3D Engine</span>
-        </div>
-        <div class="card-item">
-          <strong>Programming Languages:</strong>
-          <span>C++, OpenGL</span>
-        </div>
-        <div class="card-item">
-          <strong>Tools Used:</strong>
-          <span>Visual Studio, Git, CMake</span>
-        </div>
-        <div class="card-item">
-          <strong>Project Link:</strong>
-          <span><a href="https://github.com/your-project">GitHub Repository</a></span>
-        </div>
-      </div>
-    </div>
-  </aside>
-
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
-
-      <!-- PROJECT HEADER -->
-      <div id="project-header">
-          <!-- 
-            TODO
-
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
-        <div class="main-title">Managine</div>
-        <div class="body-text">Custome 3D Engine using OpenGL. <a href="https://github.com/schildka/Managine">Project Link</a> </div>
-      </div>
 	    
       <!-- PROJECT DETAILS -->
       <!-- 
@@ -99,8 +50,32 @@
         - Change the 'subheader-text' to whatever header you want for project details
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
+
+<div class="project-init">
+      <div class="card-header">
+        <h3 class="card-title">Managine</h3>
+      </div>
+      <div class="card-body">
+ 	<div class="card-item">
+          <strong>Custome 3D Engine using OpenGL.</strong>
+        </div>
+        <div class="card-item">
+          <strong>Programming Languages: &nbsp</strong>
+          <span>C++, OpenGL</span>
+        </div>
+        <div class="card-item">
+          <strong>Tools Used:</strong>
+          <span>Visual Studio, Git, CMake</span>
+        </div>
+        <div class="card-item">
+          <strong>Project Link:</strong>
+          <span><a href="https://github.com/schildka/Managine.git">GitHub Repository</a></span>
+        </div>
+      </div>
+    </div>
+
       <div id="project-details">
-        <div class="subheader-text">Project Details</div>
+        <div class="subheader-text">Project Description</div>
         <div class="project-details-content">
           <div class="body-text">Managine
 is a 3D engine including an asset management, rendering,

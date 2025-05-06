@@ -54,6 +54,32 @@ a.icon-link:hover {
   }
 }
 
+/* New rules for aligning the buttons */
+.navbar-actions {
+  display: flex;
+  gap: 15px; /* space between buttons */
+  align-items: center;
+}
+
+/* Style for the dark mode toggle button */
+.dark-mode-toggle {
+  padding: 8px 16px;
+  border: 3px solid #141414;
+  border-radius: 50px;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #f4f4f4;
+  text-decoration: underline;
+}
+
+/* Optional: dark mode specific button styling */
+.dark-mode .dark-mode-toggle {
+  color: white;
+}
 
 /* Button Styling */
 
