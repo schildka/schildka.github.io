@@ -129,6 +129,11 @@ body {
   height: auto;
 }
 
+.project-psoter-image {
+  width: 50%;
+  height: auto;
+}
+
 #project-details {
   display: flex;
   flex-direction: column;
