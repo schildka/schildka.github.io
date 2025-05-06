@@ -158,12 +158,12 @@ body {
   flex: 1 1 300px;
 }
 
-.project-image {
+.project-entry-image {
   flex: 1 1 300px;
   text-align: right;
 }
 
-.project-image img {
+.project-entry-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
