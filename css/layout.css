@@ -111,10 +111,19 @@ body {
       height: 200px;
       object-fit: cover;
       object-position: center;
+	  transition: transform 0.3s ease;
     }
+	
+	.project-image-container {
+	  position: relative; /* Added relative positioning */
+	  overflow: hidden;
+	}
 
-
-
+	.project-image-container:hover .project-image {
+	  transform: scale(1.5);
+	  z-index: 10;
+	  transition: transform 0.3s ease;
+	}
 
 /* Project Pages */
 
@@ -174,8 +183,14 @@ body {
     .gallery-image {
       width: 100%;
       height: auto;
+	  transition: transform 0.3s ease;
     }
-
+	
+	.gallery-image-container:hover .gallery-image {
+	  transform: scale(1.5);
+	  z-index: 10;
+	  transition: transform 0.3s ease;
+	}
 
 /* Card Container */
 .project-init {
