@@ -115,7 +115,6 @@ body {
     }
 	
 	.project-image-container {
-	  position: relative; /* Added relative positioning */
 	  overflow: hidden;
 	}
 
@@ -308,6 +307,31 @@ body {
   flex-shrink: 0;
   position: sticky;
   top: 150px;
+}
+
+/* Base styling for pseudocode */
+code.pseudocode {
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  overflow-x: auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode */
+body:not(.dark-mode) code.pseudocode {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* Dark mode */
+body.dark-mode code.pseudocode {
+  background-color: #1e1e1e;
+  color: #ddd;
 }
 
 /* === DARK MODE === */

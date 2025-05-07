@@ -13,7 +13,7 @@
       This should be the same across all pages.
      -->
      <link rel="icon" href="../assets/images/RundesApplicationBild.png" />
-     <title>Merge Jellies Idle Adventure</title>
+     <title>PBD-Gases</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -45,11 +45,11 @@
 	    
 		<div class="project-init">
       <div class="card-header">
-        <h3 class="card-title">Merge Jelly Idle Adventure</h3>
+        <h3 class="card-title">Real-Time-Gases</h3>
       </div>
       <div class="card-body">
  	<div class="card-item">
-          <strong>Merge Idle Game for Android</strong>
+          <strong>Gas simulation plugin for Unity based on the position-based dynamic algorithm</strong>
         </div>
 		<div class="card-item">
           <strong>Engine: &nbsp</strong>
@@ -57,15 +57,15 @@
         </div>
         <div class="card-item">
           <strong>Programming Languages: &nbsp</strong>
-          <span>C#, Ruby, HLSL</span>
+          <span>C#, GLSL</span>
         </div>
         <div class="card-item">
           <strong>Tools Used:</strong>
-          <span>Rider, Git, Svn, Codecks</span>
+          <span>Rider, Git</span>
         </div>
         <div class="card-item">
-          <strong>Video Link:</strong>
-          <span><a href="https://youtu.be/wqqplTv6ptc?si=iUeBerpNevfnLEvv">YouTube</a></span>
+          <strong>Project Link:</strong>
+          <span><a href="https://github.com/schildka/PBDGases">GitHub</a></span>
         </div>
       </div>
     </div>
@@ -77,27 +77,42 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Game Description</div>
+        <div class="subheader-text">Project Description</div>
         <div class="project-details-content">
-          <div class="body-text">Merge Jelly Idle Adventure is a delightful puzzle adventure RPG that will captivate players with its charming jelly characters and engaging gameplay. Developed by The Phoenix Lighthouse GmbH, this free game is available on Android and offers a lighthearted storyline filled with mad robots and jelly heroes.
-								</br>
-								 In Merge Jelly Idle Adventure, players join Ada, a mad scientist who accidentally created a group of pesky bots. It's up to the gang of jellys to save the world by merging and becoming stronger. The game features a variety of jellys in different shapes and colors, each with their own adorable design.
-								<a href="https://merge-jelly-idle-adventure.en.softonic.com/android">Full review text.</a>
+          <div class="body-text">
+			With steadily increasing computing power real-time
+			simulations of particle-based fluids gain more attention. For interactive
+			applications the position-based dynamics are widely used
+			because of their controllability. We present a GPU independent
+			position-based approach for Unity, focusing on gases, with the
+			capability to calculate the densities in closed environments. We
+			show that a realistic gas simulation with reasonable performance,
+			which calculates and visualizes the amount of gases in a game,
+			can easily be integrated into Unity using this plugin. On a CPU
+			with 3.30GHz, we have constant 40 to 50 frames per second
+			using around 1k particles. A minimal simulation model can be
+			acquired with four clicks, when the plugin is integrated.
+			</br>
+			 Real-time Gases is developed as a particle-based simulation,
+			that calculates the methods of the position-based dynamics
+			on the GPU, while still providing a CPU version. To prevent
+			permanent instantiation and destroying of particles, the
+			maximum number of required gases is initialized in an object
+			pool at the beginning of the simulation. Then all simulation
+			values are sent to the GPU, where the needed calculations are
+			run. After this, the resulting values are read from the GPU
+			and applied to the simulation objects. In case of the CPU
+			version, the position-based dynamic calculations are executed
+			directly. At the end the particles positions are updated with
+			their corresponding Game Objects.
 		  </div>						
-		</div>
-      </div>
-
-	  <div id="project-details">
-        <div class="subheader-text">What I Did</div>
-        <div class="project-details-content">
-          <div class="body-text">Worked on core gameplay systems including the merge grid and its user interactions. Implemented communication between the merge grid and battle system to ensure seamless gameplay flow. Designed and integrated quest and bonus systems to enhance player engagement. Developed the upgrade system, conducted performance analysis, and contributed to overall game polish. Researched and integrated rewarded video ads into the game. Created a custom BigInt class to support endless progression mechanics.</div>
 		</div>
       </div>
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
         <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
+        <div class="subheader-text">Gallery</div>
         <div class="project-gallery-content">
             <!-- 
               TODO
@@ -123,18 +138,40 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/JellyMerge.jpg" class="gallery-image">
-              <span class="image-caption">Merge Grid</span>
+              <img src="../assets/images/pbdPoster.png" class="gallery-image">
+              <span class="image-caption">Project Poster</span>
             </div>
-			<div class="gallery-image-container half-width">
-              <img src="../assets/images/JellyUpgrades.jpg" class="gallery-image">
-              <span class="image-caption">Upgrades</span>
+<pre>
+<code class="pseudocode">1: <strong>for</strong> each particle <em>i</em> <strong>do</strong>
+2:  damp velocity v<sub>i</sub> ← v<sub>i</sub> · damping · Δt
+3:  apply external forces v<sub>i</sub> ← v<sub>i</sub> + Δt · f<sub>ext</sub>()
+4:  estimate position x<sub>i</sub><sup>*</sup> ← x<sub>i</sub> + Δt · v<sub>i</sub>
+5: <strong>end for</strong>
+6: <strong>for</strong> each particle <em>i</em> <strong>do</strong>
+7:  find neighboring particles N<sub>i</sub>(x<sub>i</sub><sup>*</sup>)
+8:  find other contacts C<sub>i</sub>(x<sub>i</sub>; x<sub>i</sub><sup>*</sup>)
+9: <strong>end for</strong>
+10: <strong>while</strong> iter &lt; solverIterations <strong>do</strong>
+11:  <strong>for</strong> each particle <em>i</em> <strong>do</strong>
+12:    solve density constraint Δp<sub>i</sub>
+13:    update position x<sub>i</sub><sup>*</sup> ← x<sub>i</sub><sup>*</sup> + Δp<sub>i</sub>
+14:  <strong>end for</strong>
+15: <strong>end while</strong>
+16: <strong>for</strong> each particle <em>i</em> <strong>do</strong>
+17:  update velocity v<sub>i</sub> ← (x<sub>i</sub><sup>*</sup> − x<sub>i</sub>) · (1 / Δt)
+18:  apply internal forces f<sub>drag</sub>, f<sub>vort</sub>
+19:  update position x<sub>i</sub> ← x<sub>i</sub><sup>*</sup>
+20: <strong>end for</strong>
+</code><span class="image-caption">PBD algorithm solver loop</span>
+</pre>
+			<div class="gallery-image-container">
+              <img src="../assets/images/pbdInit.png" class="gallery-image">
+              <span class="image-caption">Plugin Settings</span>
             </div>
         </div>
       </div>
     </div>
 
-		
     <!-- FOOTER -->
     <div id="footer">
       <!-- 
