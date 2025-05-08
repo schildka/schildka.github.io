@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/RundesApplicationBild.png" />
+     <title>5Days</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+
+    <!-- NAVBAR -->
+<div class="navbar">
+  <a class="nav-title-link" href="../index.html">
+    <span class="nav-title">Portfolio</span>
+  </a>
+  
+  <!-- Wrap these buttons inside a container -->
+  <div class="navbar-actions">
+    <!-- Dark mode toggle -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+      <span class="button-text">Toggle Dark Mode</span>
+    </button>
+  </div>
+</div>
+		
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+	    
+		<div class="project-init">
+      <div class="card-header">
+        <div class="card-title">Milgram Asylum</div>
+      </div>
+      <div class="card-body">
+ 	<div class="card-item">
+          <strong>VR Game for PC</strong>
+        </div>
+		<div class="card-item">
+          <strong>Engine: &nbsp</strong>
+          <span>Unreal</span>
+        </div>
+        <div class="card-item">
+          <strong>Programming Languages: &nbsp</strong>
+          <span>C++, Blueprints</span>
+        </div>
+        <div class="card-item">
+          <strong>Tools Used:</strong>
+          <span>Visual Studio, Git</span>
+        </div>
+        <div class="card-item">
+          <strong>Trailer Link:</strong>
+          <span><a href="https://drive.google.com/drive/folders/1uWtX_QyA3udpBkuFuLwPmfPQR7XxUwa1?usp=sharing">Drive</a></span>
+        </div>
+      </div>
+    </div>
+		
+			
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Game Description</div>
+        <div class="project-details-content">
+          <div class="body-text">In the VR game MILGRAM ASYLUM, players take on the role of a prisoner held in a sci-fi facility run by the organization SysRec. To earn the prospect of an early release, the prisoner must complete a series of experimental challenges.
+								</br>
+								 The decisions players face throughout the game are based on ethical dilemmas, situations in which no option is entirely right or wrong. Each choice forces the player to confront moral ambiguity, with no clear or satisfying resolution. How a player responds is entirely unpredictable and shapes their unique experience.
+								</br>
+								Will they find a way to escape the prison or become a part of it?.</div>
+		</div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+
+			<div class="gallery-image-container half-width">
+              <img src="../assets/images/Milgrim4.png" class="gallery-image">
+              <span class="image-caption">Level.1</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/Milgrim5.png" class="gallery-image">
+              <span class="image-caption">Level.5</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/Milgrim6.png" class="gallery-image">
+              <span class="image-caption">Level.5</span>
+            </div>
+			 <div class="gallery-image-container half-width">
+              <img src="../assets/images/Milgrim7.png" class="gallery-image">
+              <span class="image-caption">Level.2</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+		
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:schildknecht.manuela@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    
+      <!-- 
+        TODO - Change the LinkedIn link  
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="https://www.linkedin.com/in/manuela-schildknecht">
+        <image src="../assets/icons/linkedIn.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+	</body>
+</html>
