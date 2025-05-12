@@ -223,13 +223,22 @@ body {
 .card-item {
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
-  color: #555;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .card-item strong {
+  white-space: nowrap; /* Don't let the label wrap */
+  flex-shrink: 0;
   font-weight: bold;
   color: #333;
+}
+
+.card-item span {
+  text-align: right;
+  min-width: 0;
+  word-break: break-word;
+  flex: 1;
 }
 
 /* Link Style */
